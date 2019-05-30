@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Mendel's Greenhouse</title>
+</head>
+
+<body onload="hide()">
+    <script src="./script.js"></script>
+    <div class="maintitle">
+        <h1>Mendel's Greenhouse</h1>
+        <i style="font-size:8pt">All images from https://unsplash.com/search/photos/flower
+        </i>
+    </div>
+    <div class="gamebox">
+        <div class="gameboxtop" id="topbox">
+            Welcome to the Greenhouse!
+        </div>
+        <div id="textbox">
+            You are a genetisit who is trying to create a flower with black petals.
+            <br>
+            <br> You have been given 5 seeds with random genes in order to accomplish this task.
+            <br>
+            <br> How many of your seeds would you like to plant today? The rest will be discarded.
+        </div>
+        <div id="go" onclick="bees()">
+                Next Day
+            </div>
+        <div class="row" id="initialselect">
+            <div class="numberselectbox" onclick="plant(1)">
+                1
+            </div>
+            <div class="numberselectbox" onclick="plant(2)">
+                2
+            </div>
+            <div class="numberselectbox" onclick="plant(3)">
+                3
+            </div>
+            <div class="numberselectbox" onclick="plant(4)">
+                4
+            </div>
+            <div class="numberselectbox" onclick="plant(5)">
+                5
+            </div>
+        </div>
+        <div class="row" style="margin-top:12%" id="flowerBox">
+        </div>
+    </div>
+</body>
